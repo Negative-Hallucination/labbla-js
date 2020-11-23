@@ -48,30 +48,19 @@ const animate = t => {
     let translateGreen = diff * 2 / amount;
     let translateBlue = diff * 1 / amount;
 
-    /*
-    var center = document.querySelectorAll('.center');
-    var r = document.querySelectorAll('.r');
-    var g = document.querySelectorAll('.g');
-    var b = document.querySelectorAll('.b');
-    */
-
     document.querySelectorAll('.center').forEach(function(tag) {
-        // Now do something with my button
         tag.style.transform = 'translateY(' + translateCenter + 'px)';
     });
 
     document.querySelectorAll('.r').forEach(function(r) {
-        // Now do something with my button
         r.style.transform = 'translateY(' + translateRed + 'px)';
     });
 
     document.querySelectorAll('.g').forEach(function(g) {
-        // Now do something with my button
         g.style.transform = 'translateY(' + translateGreen + 'px)';
     });
 
     document.querySelectorAll('.b').forEach(function(b) {
-        // Now do something with my button
         b.style.transform = 'translateY(' + translateBlue + 'px)';
     });
 
